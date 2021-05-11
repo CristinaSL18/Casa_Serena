@@ -90,4 +90,8 @@ public class MenuInicio extends AppCompatActivity {
         Intent sigueinte4 = new Intent(this, RecreativasActivity.class);
         startActivity(sigueinte4);
     }
+    public void Login(View view) {
+        Intent sigueinte = new Intent(this, LoginActivity.class);
+        startActivity(sigueinte);
+    }
 }

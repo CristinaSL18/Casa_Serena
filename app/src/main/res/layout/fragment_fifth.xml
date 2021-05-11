@@ -11,9 +11,11 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="98dp"
-        android:layout_height="51dp"
-        android:text="@string/btn_cerrar"
+        android:layout_width="153dp"
+        android:layout_height="49dp"
+        android:text="CERRAR SESION"
+        app:backgroundTint="#F44336"
+        android:onClick="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

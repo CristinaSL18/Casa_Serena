@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
-        android:id="@+id/config2"
+        android:id="@+id/configgg"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
         android:background="@color/colorPrimary"
@@ -48,17 +48,6 @@
             android:layout_gravity="right"
             android:src="@drawable/ic_settings_black_24dp" />
     </LinearLayout>
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_cerrar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.932" />
 
     <ImageView
         android:id="@+id/imageView3"

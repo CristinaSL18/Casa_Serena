@@ -8,6 +8,8 @@
     <string name="txt_Contrasena">Contraseña:</string>
     <string name="txt_terminos_condiciones">Terminos y condiciones</string>
     <string name="img_usuario">usuario</string>
+    <string name="img_horario">horario</string>
+    <string name="img_config">configurar</string>
     <string name="btn_editar">EDITAR</string>
     <string name="btn_guardar">GUARDAR</string>
     <string name="btn_cerrar">CERRAR</string>

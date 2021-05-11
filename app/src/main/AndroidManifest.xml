@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".OlvidadoActivity"></activity>
+        <activity android:name=".CalendarioActivity"></activity>
+        <activity android:name=".OlvidadoActivity" />
         <activity android:name=".ConfiguracionActivity" />
         <activity android:name=".LecturaActivity" />
         <activity android:name=".ManualidadesActivity" />

@@ -12,7 +12,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="1dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="562dp">
@@ -49,7 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:layout_marginTop="60dp">
+                android:layout_marginTop="40dp">
 
                 <ImageButton
                     android:id="@+id/fisicas"
@@ -58,6 +57,48 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
                     android:src="@drawable/ic_peso" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Actividades de resistencia, o aeróbicas como caminatas, correr, bailar, nadar y andar en bici (tomando siempre las medidas de seguridad adecuadas para cada actividad)."
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¡Te invitamos a participar en nuestras actividades!"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="229dp"
+                android:contentDescription="Todo"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/foro1" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Horarios: Verificar Calendario"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

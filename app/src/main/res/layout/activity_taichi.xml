@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:textAlignment="center"
     tools:context=".TaichiActivity">
 
     <FrameLayout
@@ -16,7 +17,7 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="562dp">
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -25,16 +26,16 @@
 
                 <LinearLayout
                     android:id="@+id/config2"
-                    app:title="Casa Serena"
-                    app:titleMarginStart="40dp"
                     android:layout_width="match_parent"
                     android:layout_height="?actionBarSize"
                     android:background="@color/colorPrimary"
-                    app:menu="@menu/configuracion"
-                    android:orientation="vertical"
                     android:elevation="4dp"
+                    android:orientation="vertical"
                     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+                    app:menu="@menu/configuracion"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:title="Casa Serena"
+                    app:titleMarginStart="40dp">
 
                     <ImageButton
                         android:id="@+id/conf2"
@@ -47,11 +48,24 @@
 
                 </LinearLayout>
 
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="TAI-CHI"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="60dp">
+                    android:layout_marginTop="0dp">
 
                     <ImageButton
                         android:id="@+id/fisicas"
@@ -60,7 +74,175 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="left"
                         android:src="@drawable/ic_ying_yang" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Es un sistema no competitivo de ejercicio físico suave y estiramiento que se practica al propio ritmo. Cada postura fluye hacia la siguiente sin pausa, asegurando que el cuerpo esté en constante movimiento."
+                        android:textAlignment="center"
+                        android:textColor="#F5000000"
+                        android:textSize="16sp" />
+
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="¿Cuáles son sus beneficios?"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="398dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:text="El taichi es una disciplina ancestral que ofrece relajación, reduce el estrés y la ansiedad, a la vez que mejora la flexibilidad del cuerpo y el equilibrio de la mente."
+                        android:textColor="#F5000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="229dp"
+                        android:contentDescription="Todo"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/tachi" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/colorPrimary"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:text="Tipos de Tai-Chi"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="398dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:text="En la modalidad Yang se realizan movimientos largos y suaves. Es muy recomendado para principiantes y personas de mayor edad."
+                        android:textColor="#F5000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView36"
+                        android:layout_width="398dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:text="En la modalidad Chen se pasa de la relajación al ejercicio en un solo movimiento. Es apto para personas más entrenadas en esta disciplina al exigir mayor esfuerzo físico."
+                        android:textColor="#F5000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="229dp"
+                        android:layout_weight="1"
+                        android:contentDescription="Todo"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/taichi_2" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:fontFamily="sans-serif-black"
+                    android:text="¡TE INVITAMOS A PARTICIPAR EN NUESTRA ACTIVIDAD DE TAI-CHI!"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
             </LinearLayout>
         </ScrollView>
     </FrameLayout>

@@ -16,7 +16,7 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="562dp">
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -25,16 +25,16 @@
 
                 <LinearLayout
                     android:id="@+id/config2"
-                    app:title="Casa Serena"
-                    app:titleMarginStart="40dp"
                     android:layout_width="match_parent"
                     android:layout_height="?actionBarSize"
                     android:background="@color/colorPrimary"
-                    app:menu="@menu/configuracion"
-                    android:orientation="vertical"
                     android:elevation="4dp"
+                    android:orientation="vertical"
                     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+                    app:menu="@menu/configuracion"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:title="Casa Serena"
+                    app:titleMarginStart="40dp">
 
                     <ImageButton
                         android:id="@+id/conf2"
@@ -47,11 +47,24 @@
 
                 </LinearLayout>
 
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="LECTURA"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginTop="60dp">
+                    android:layout_marginTop="0dp">
 
                     <ImageButton
                         android:id="@+id/fisicas"
@@ -60,7 +73,158 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="left"
                         android:src="@drawable/ic_libro_de_lectura" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="249dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-light"
+                        android:text="La lectura es un proceso en el que un individuo conoce cierta información mediante el lenguaje visual o escrito. El lector se enfrenta a ciertas palabras, números o símbolos, los traduce en información dentro de su mente, los decodifica y aprende."
+                        android:textAlignment="center"
+                        android:textColor="#F5000000"
+                        android:textSize="16sp" />
+
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="¿Cuáles son sus beneficios?"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:text="La lectura es un proceso cognitivo que tiene muchos beneficios para la salud mental, emocional y social de las personas. Aquellas que leen con mayor regularidad adquieren lo que se conoce como “hábito de lectura”."
+                        android:textColor="#F5000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="229dp"
+                        android:contentDescription="Todo"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/lectura_2__2_" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="Entre las principales ventajas de la lectura está permitir en adquirir conocimientos e incrementar la capacidad comunicativa, ayudar a desarrollar la capacidad de análisis y resolución de problemas, es una opción de entretenimiento, permitir desarrollar la empatía y las relaciones interpersonales, permitir en liberar emociones, estimular la concentración, entre otras."
+                    android:textColor="#F5000000"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="229dp"
+                        android:layout_weight="1"
+                        android:contentDescription="Todo"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/lectura" />
+
+                    <TextView
+                        android:id="@+id/textView40"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Figura 1. Fotografía tomada después de la sesión"
+                        android:textColor="#F5000000"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:fontFamily="sans-serif-black"
+                    android:text="¡TE INVITAMOS A PARTICIPAR EN NUESTRA ACTIVIDAD DE LECTURA!"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
             </LinearLayout>
         </ScrollView>
     </FrameLayout>

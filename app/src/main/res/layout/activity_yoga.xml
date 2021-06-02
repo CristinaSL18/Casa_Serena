@@ -157,7 +157,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageView5"
+                        android:id="@+id/imageView51"
                         android:layout_width="match_parent"
                         android:layout_height="229dp"
                         android:layout_weight="1"
@@ -166,7 +166,7 @@
                         app:srcCompat="@drawable/yoga" />
 
                     <TextView
-                        android:id="@+id/textView40"
+                        android:id="@+id/textView402"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -189,7 +189,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageView5"
+                        android:id="@+id/imageView52"
                         android:layout_width="match_parent"
                         android:layout_height="229dp"
                         android:layout_weight="1"
@@ -198,7 +198,7 @@
                         app:srcCompat="@drawable/yoga_2" />
 
                     <TextView
-                        android:id="@+id/textView40"
+                        android:id="@+id/textView401"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -221,7 +221,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageView5"
+                        android:id="@+id/imageView53"
                         android:layout_width="match_parent"
                         android:layout_height="229dp"
                         android:layout_weight="1"
@@ -230,7 +230,7 @@
                         app:srcCompat="@drawable/yoga_4" />
 
                     <TextView
-                        android:id="@+id/textView40"
+                        android:id="@+id/textView403"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -253,7 +253,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageView5"
+                        android:id="@+id/imageView54"
                         android:layout_width="match_parent"
                         android:layout_height="229dp"
                         android:layout_weight="1"
@@ -262,7 +262,7 @@
                         app:srcCompat="@drawable/yoga_5" />
 
                     <TextView
-                        android:id="@+id/textView40"
+                        android:id="@+id/textView404"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"

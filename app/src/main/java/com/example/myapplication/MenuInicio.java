@@ -16,7 +16,8 @@ import android.view.View;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MenuInicio extends AppCompatActivity {
-
+    private String correoD;
+    private boolean invitado;
     FirstFragment firstFragment = new FirstFragment();
     SecondFragment secondFragment = new SecondFragment();
     ThirdFragment thirdFragment = new ThirdFragment();
@@ -26,6 +27,12 @@ public class MenuInicio extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_inicio);
+        correoD = getIntent().getStringExtra("correo");
+        invitado = getIntent().getBooleanExtra("correo2", false);
+        Bundle bundle = new Bundle();
+        bundle.putString("Valor", correoD);
+        bundle.putBoolean("Invitado", invitado);
+        firstFragment.setArguments(bundle);
 
 
         BottomNavigationView navigation = findViewById(R.id.config);
@@ -63,8 +70,11 @@ public class MenuInicio extends AppCompatActivity {
     }
 
     public void Conf(View view) {
-        Intent sigueinte = new Intent(this, ConfiguracionActivity.class);
-        startActivity(sigueinte);
+        System.out.println(correoD);
+            Intent sigueinte = new Intent(this, ConfiguracionActivity.class);
+            sigueinte.putExtra("correo1", correoD);
+            sigueinte.putExtra("invitado2", invitado);
+            startActivity(sigueinte);
     }
     public void Fisicas(View view) {
         Intent sigueinte4 = new Intent(this, FisicasActivity.class);

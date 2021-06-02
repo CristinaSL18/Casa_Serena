@@ -12,29 +12,43 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <TextView
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textView7"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="277dp"
-            android:layout_height="41dp"
-            android:text="@string/txt_Contrasena"
-            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5"
-            app:layout_constraintVertical_bias="0.289" />
+            app:layout_constraintVertical_bias="0.289" >
 
-        <TextView
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit3TextOutlined"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textView6"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="277dp"
-            android:layout_height="41dp"
+            android:layout_height="wrap_content"
             android:text="@string/txt_Correo"
-            android:textSize="24sp"
+            android:textSize="18dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5"
-            app:layout_constraintVertical_bias="0.05" />
+            app:layout_constraintVertical_bias="0.05">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit3TextOutlined4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <LinearLayout
             android:id="@+id/config2"
@@ -64,17 +78,24 @@
                 android:src="@drawable/ic_home_black_24dp" />
         </LinearLayout>
 
-        <TextView
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textView5"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="277dp"
-            android:layout_height="41dp"
-            android:text="@string/txt_Usuario"
-            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:text="Apellido:"
+            android:textSize="18dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3"
-            app:layout_constraintVertical_bias="0.053" />
+            app:layout_constraintVertical_bias="0.053">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit3TextOutlined22"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <ImageView
             android:id="@+id/imageView2"
@@ -89,17 +110,22 @@
             app:layout_constraintVertical_bias="0.193"
             app:srcCompat="@drawable/usuario1" />
 
-        <TextView
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textView3"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="277dp"
-            android:layout_height="41dp"
-            android:text="@string/txt_Nombre"
-            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            app:layout_constraintVertical_bias="0.058" />
+            app:layout_constraintVertical_bias="0.056" >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit3TextOutlined2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <CheckedTextView
             android:id="@+id/checkedTextView"
@@ -111,12 +137,13 @@
             app:layout_constraintHorizontal_bias="0.254"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.795" />
+            app:layout_constraintVertical_bias="0.839" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="98dp"
             android:layout_height="51dp"
+            android:onClick="Editar"
             android:text="@string/btn_editar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -129,7 +156,9 @@
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/btn_guardar"
+            android:onClick="Eliminar"
+            android:text="Eliminar"
+            app:backgroundTint="#F44336"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.789"

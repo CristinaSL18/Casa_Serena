@@ -172,7 +172,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageView5"
+                        android:id="@+id/imageView52"
                         android:layout_width="match_parent"
                         android:layout_height="229dp"
                         android:layout_weight="1"
@@ -181,7 +181,7 @@
                         app:srcCompat="@drawable/actividades_recreativas_2" />
 
                     <TextView
-                        android:id="@+id/textView29"
+                        android:id="@+id/textView291"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -204,7 +204,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageView5"
+                        android:id="@+id/imageView51"
                         android:layout_width="match_parent"
                         android:layout_height="229dp"
                         android:layout_weight="1"
@@ -213,7 +213,7 @@
                         app:srcCompat="@drawable/actividades_recreativas_3" />
 
                     <TextView
-                        android:id="@+id/textView29"
+                        android:id="@+id/textView292"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -236,7 +236,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageView5"
+                        android:id="@+id/imageView53"
                         android:layout_width="match_parent"
                         android:layout_height="229dp"
                         android:layout_weight="1"
@@ -245,7 +245,7 @@
                         app:srcCompat="@drawable/actividades_recreativas_4" />
 
                     <TextView
-                        android:id="@+id/textView29"
+                        android:id="@+id/textView293"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -268,7 +268,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageView5"
+                        android:id="@+id/imageView54"
                         android:layout_width="match_parent"
                         android:layout_height="229dp"
                         android:layout_weight="1"
@@ -277,7 +277,7 @@
                         app:srcCompat="@drawable/actividades_recreativas_6" />
 
                     <TextView
-                        android:id="@+id/textView29"
+                        android:id="@+id/textView294"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"

@@ -3,7 +3,10 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.ViewGroupUtils;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteAbortException;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -11,7 +14,13 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.myapplication.model.Usuario;
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.UUID;
 
 public class register extends AppCompatActivity {
 
@@ -21,6 +30,9 @@ public class register extends AppCompatActivity {
     private TextInputLayout correoE;
     private TextInputLayout contraN;
     private CheckBox check;
+
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +46,15 @@ public class register extends AppCompatActivity {
         correoE = findViewById(R.id.correo2TextFaild);
         contraN = findViewById(R.id.contra2TextFaild);
         check = findViewById(R.id.check);
+
+        InicializarBD();
     }
+    private void InicializarBD(){
+        FirebaseApp.initializeApp(this);
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        databaseReference = firebaseDatabase.getReference();
+    }
+
     private boolean validarN(){
         String valN = nombre1.getEditText().getText().toString().trim();
 
@@ -104,11 +124,28 @@ public class register extends AppCompatActivity {
         if(!validarN() || !validarAP() || !validarAM() || !validarC() || !validarCN() || !validarCH()){
             return;
         }
-        String input = "Registrado";
+
+        String nombreDB = nombre1.getEditText().getText().toString();
+        String apPDB = apP.getEditText().getText().toString();
+        String apMDB = apM.getEditText().getText().toString();
+        String correoEDB = correoE.getEditText().getText().toString();
+        String contraNDB = contraN.getEditText().getText().toString();
+
+        Usuario u = new Usuario();
+        u.setId(UUID.randomUUID().toString());
+        u.setNombre(nombreDB);
+        u.setApP(apPDB);
+        u.setApM(apMDB);
+        u.setCorreo(correoEDB);
+        u.setContraseña(contraNDB);
+
+        databaseReference.child("Usuario").child(u.getId()).setValue(u);
+
+        String input = "Usuario registrado";
         Toast.makeText(this, input, Toast.LENGTH_SHORT).show();
-        Intent sigueinte3 = new Intent(this, MenuInicio.class);
+        Intent sigueinte3 = new Intent(this, LoginActivity.class);
         startActivity(sigueinte3);
-            }
+    }
 }
 
 

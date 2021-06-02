@@ -12,6 +12,28 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="1dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:id="@+id/config2"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:menu="@menu/configuracion"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="Casa Serena"
+            app:titleMarginStart="40dp">
+
+            <ImageButton
+                android:id="@+id/conf1"
+                style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:onClick="Configg"
+                android:src="@drawable/ic_settings_black_24dp" />
+        </LinearLayout>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -20,30 +42,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:id="@+id/config2"
-                    android:layout_width="match_parent"
-                    android:layout_height="?actionBarSize"
-                    android:background="@color/colorPrimary"
-                    android:elevation="4dp"
-                    android:orientation="vertical"
-                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-                    app:menu="@menu/configuracion"
-                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-                    app:title="Casa Serena"
-                    app:titleMarginStart="40dp">
-
-                    <ImageButton
-                        android:id="@+id/conf1"
-                        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="right"
-                        android:onClick="Configg"
-                        android:src="@drawable/ic_settings_black_24dp" />
-                </LinearLayout>
+                android:orientation="vertical"
+                android:layout_marginTop="70dp">
 
                 <TextView
                     android:id="@+id/textView22"
@@ -72,7 +72,7 @@
                         android:src="@drawable/ic_peso" />
 
                     <TextView
-                        android:layout_width="247dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif-light"
@@ -99,7 +99,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center">
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -129,7 +130,7 @@
 
                 <TextView
                     android:id="@+id/textView28"
-                    android:layout_width="398dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
@@ -165,7 +166,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageView5"
+                        android:id="@+id/imageView8"
                         android:layout_width="match_parent"
                         android:layout_height="229dp"
                         android:layout_weight="1"
@@ -174,7 +175,7 @@
                         app:srcCompat="@drawable/actividad_fisica_2" />
 
                     <TextView
-                        android:id="@+id/textView29"
+                        android:id="@+id/textView230"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -197,7 +198,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageView5"
+                        android:id="@+id/imageView50"
                         android:layout_width="match_parent"
                         android:layout_height="229dp"
                         android:layout_weight="1"
@@ -206,7 +207,7 @@
                         app:srcCompat="@drawable/actividad_fisica_3" />
 
                     <TextView
-                        android:id="@+id/textView29"
+                        android:id="@+id/textView290"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -266,7 +267,7 @@
 
                 <TextView
                     android:id="@+id/textView30"
-                    android:layout_width="400dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"

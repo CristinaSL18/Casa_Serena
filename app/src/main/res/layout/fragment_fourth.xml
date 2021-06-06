@@ -26,7 +26,7 @@
         android:id="@+id/configgg"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:background="@color/colorPrimary"
+        android:background="#EEE4CDA7"
         android:elevation="4dp"
         android:orientation="vertical"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
